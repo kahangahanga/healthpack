@@ -1,0 +1,26 @@
+a.link {
+  @apply text-link hover:text-link-hover underline;
+}
+
+.max-w-content {
+  @apply max-w-screen-lg md:max-w-screen-md mx-auto px-4;
+  @screen lg {
+    max-width: calc(theme('screens.md') + theme('spacing.10'));
+  }
+}
+
+.icon-button {
+  @apply hover:bg-hover w-10 h-10 flex items-center justify-center rounded-md !outline-none focus:ring-2 ring-blue-500;
+}
+
+.input {
+  @apply p-2 bg-primary border my-2 rounded-md;
+}
+.input:focus {
+  @apply ring-1 ring-blue-500 border-blue-500 outline-none;
+}
+
+.btn {
+  @apply text-white cursor-pointer rounded-md p-2 transition-all;
+  @apply bg-blue-primary hover:bg-blue-hover active:bg-blue-active !important;
+}

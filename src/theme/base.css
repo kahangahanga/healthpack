@@ -1,0 +1,94 @@
+:root {
+  --colors-body-background: theme('colors.light.1');
+
+  --colors-text-primary: theme('colors.light.12');
+  --colors-text-secondary: theme('colors.light.11');
+  --colors-text-typography: theme('colors.light.typography');
+  --colors-text-link: theme('colors.light.blue.11');
+  --colors-text-link-hover: theme('colors.light.blue.12');
+
+  --colors-border-primary: theme('colors.light.6');
+  --colors-border-hover: theme('colors.light.8');
+
+  --colors-bg-primary: rgb(236, 238, 240, 0.25);
+  --colors-bg-hover: theme('colors.light.4');
+  --colors-bg-active: theme('colors.light.5');
+
+  --colors-bg-blue-primary: theme('colors.light.blue.9');
+  --colors-bg-blue-hover: theme('colors.light.blue.11');
+  --colors-bg-blue-active: theme('colors.light.blue.12');
+}
+
+/* slate dark */
+.dark {
+  --colors-body-background: theme('colors.dark.1');
+
+  --colors-text-primary: theme('colors.dark.12');
+  --colors-text-secondary: theme('colors.dark.11');
+  --colors-text-typography: theme('colors.dark.typography');
+  --colors-text-link: theme('colors.dark.blue.11');
+  --colors-text-link-hover: theme('colors.dark.blue.12');
+
+  --colors-border-primary: theme('colors.dark.6');
+  --colors-border-hover: theme('colors.dark.8');
+
+  --colors-bg-primary: rgba(32, 36, 37, 0.25);
+  --colors-bg-hover: theme('colors.dark.4');
+  --colors-bg-active: theme('colors.dark.5');
+
+  --colors-bg-blue-primary: theme('colors.dark.blue.8');
+  --colors-bg-blue-hover: theme('colors.dark.blue.9');
+  --colors-bg-blue-active: theme('colors.dark.blue.10');
+}
+
+body {
+  background-color: var(--colors-body-background);
+  overflow: scroll;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  @apply w-1;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-blue-500;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-comic !important;
+}
+
+.prose div[data-title] {
+  @apply py-3 px-5 font-semibold font-mono text-primary bg-hover border rounded-t-md text-sm;
+}
+
+.prose .task-list-item {
+  @apply pl-2;
+}
+.prose .task-list-item::before {
+  @apply hidden;
+}
+
+.prose h3 .anchor,
+.prose h4 .anchor,
+.prose h5 .anchor {
+  @apply hidden;
+}

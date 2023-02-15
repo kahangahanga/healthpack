@@ -1,0 +1,37 @@
+{
+  "name": "healthpackdev",
+  "github": "healthpackdev",
+  "contactEmail": "healthpackdev@gmail.com",
+  "socials": [
+    { "href": "https://discord.com/users/573054368568311808", "icon": "discord", "color": "#738ADB" },
+    { "href": "https://github.com/healthpackdev", "icon": "github", "color": ["#181717", "white"] },
+    { "href": "https://twitter.com/healthpackdev", "icon": "twitter", "color": "#1DA1F2" },
+    {
+      "href": "https://open.spotify.com/user/yirq6nvra9f2pl9xhp4whw2c4",
+      "icon": "spotify",
+      "color": "#1DB954"
+    }
+  ],
+  "techs": [
+    { "name": "Javascript" },
+    { "name": "HTML" },
+    { "name": "CSS" },
+    { "name": "Typescript" },
+    { "name": "Webpack" },
+    { "name": "Bootstrap" },
+    { "name": "Figma" },
+    { "name": "Git" },
+    { "name": "Github", "dark": true },
+    { "name": "Heroku" },
+    { "name": "Node.js" },
+    { "name": "React" },
+    { "name": "Next.js", "dark": true },
+    { "name": "Sass" },
+    { "name": "MongoDB" },
+    { "name": "Linux" },
+    { "name": "Tailwindcss" },
+    { "name": "Yarn" },
+    { "name": "Pnpm" },
+    { "name": "Docker" }
+  ]
+}

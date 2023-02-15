@@ -1,0 +1,25 @@
+<Section header="About Me">
+  <p className="prose dark:prose-dark">
+    Hi there! I'm Yasin Kadir, a software engineer based in Turkey. I'm a full-stack developer with a passion for
+    building web applications. I'm student at highschool. I have 2 years experience in web development. You can find me
+    at <a href="https://discord.com/users/573054368568311808">Discord</a>.
+  </p>
+</Section>
+<Section header="My Editor">
+  <p className="prose dark:prose-dark">
+    I'm using{' '}
+    <b>
+      <a href="https://code.visualstudio.com">Visual Studio Code</a>
+    </b>{' '}
+    with this {extensions.length} extensions:
+    <ul>
+      {extensions.sort().map((ext) => (
+        <li key={ext.item}>
+          <a href={`https://marketplace.visualstudio.com/items?itemName=${ext.item}`}>{ext.name}</a>
+        </li>
+      ))}
+    </ul>
+    I'm using <b>{extensions.find((ext) => ext.colorTheme).name}</b> as a color theme also{' '}
+    <b>{extensions.find((ext) => ext.iconTheme).name}</b> as a icon theme.
+  </p>
+</Section>
